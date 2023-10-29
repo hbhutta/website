@@ -1,0 +1,78 @@
+import type { MDXComponents } from 'mdx/types';
+
+// This file allows you to provide custom React components
+// to be used in MDX files. You can import and use any
+// React component you want, including inline styles,
+// components from other libraries, and more.
+ 
+export function useMDXComponents(components: MDXComponents): MDXComponents {
+  return {
+    // Allows customizing built-in components, e.g. to add styling.
+    h1: ({ children }) => <h1 style={
+        {
+            fontWeight: '700',
+            paddingTop: '1.8rem',
+            letterSpacing: '0.0125em',
+            marginBlock: '1rem',
+            display: 'block',
+            fontSize: '2.5em',
+            lineHeight: 'calc(1em + (1 / 2.5 * 1ex))'
+        }
+    }>{children}</h1>,
+
+    pre: ({children}) => <pre style={
+        {
+            fontFamily: 'var(--consolas)',
+            fontSize: 'smaller',
+            fontFeatureSettings: 'normal',
+            lineHeight: 'calc(1em + (1 / 0.8 * 1ex))',
+            wordWrap: 'normal',
+            display: 'block',
+            wordBreak: 'normal',
+            overflow: 'auto'
+        }
+    }>{children}</pre>,
+
+    code: ({children}) => <code style={
+      {
+          backgroundColor: '#ECF3F3 ', // Pale yellow: #FFE9AB, Light slate: #ECF3F3 
+          fontFeatureSettings: 'normal',
+          fontFamily: 'monospace',
+          borderRadius: '5px',
+          paddingBlock: 'calc(0.33 * (1 / 0.8 * 1ex))',
+          paddingInline: 'calc(0.66 * (1 / 0.8 * 1ex))',
+          wordBreak: 'normal',
+          wordWrap: 'normal',
+          overflow: 'auto'  
+      }
+    }>{children}</code>,
+
+    p: ({ children }) => <p style={
+      {
+          fontWeight: '100',
+          fontFamily: 'Georgia',
+          fontSize: 'larger',
+          color: '#404041',
+          paddingTop: '1rem',
+          paddingBottom: '1rem'
+      }
+    }>{children}</p>,
+
+      ...components,
+    }
+}
+
+/*
+
+display: block;
+  padding: calc(1em + 1ex) !important;
+  white-space: pre;
+  word-break: normal;
+  overflow-x: auto;
+  word-wrap: normal;
+
+  mask-image: paint(squircle);
+  --squircle-radius: 10px;
+  border-radius: 10px;
+
+*/

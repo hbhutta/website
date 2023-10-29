@@ -1,5 +1,9 @@
-I **love** using [Next.js](https://nextjs.org/)
+import MdxLayout from '@/components/mdx-layout'
+ 
+# Welcome to my MDX page!
 
-```
-console.log("Hello World");
-```
+Hello, world!
+ 
+export default function MDXPage({ children }) {
+    return <MdxLayout>{children}</MdxLayout>;
+}

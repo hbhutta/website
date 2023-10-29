@@ -1,0 +1,24 @@
+import MdxLayout from '@/components/mdx-layout';
+import BlogMeta from '@/components/BlogMeta';
+import blogs from "@/data/blogs-data";
+
+# Padding and Margin in Tailwind CSS 🍃
+ 
+<BlogMeta date={blogs[0].published_date}/>
+
+Hello, world!
+
+Lorem `console.log('Hello, world!');` dolor sit amet, consectetur adipiscing elit. Sed efficitur venenatis ipsum vel vestibulum. Mauris aliquet dolor vitae pretium imperdiet. Curabitur volutpat mi eget dui gravida sagittis. Sed elit erat, placerat sit amet diam non, lacinia sodales risus. Sed aliquam eros vitae lorem viverra, sit amet rhoncus eros dapibus. Pellentesque accumsan lobortis gravida. Nam dignissim enim mi, nec convallis tortor iaculis ut. Vivamus lectus ipsum, malesuada quis tincidunt eget, dictum at ipsum. Fusce id mattis lacus, vitae pulvinar tortor. Mauris fringilla vel urna vitae pretium. Morbi id accumsan ligula, vitae venenatis mauris. Nam sapien ligula, molestie quis erat eu, elementum scelerisque erat. Aliquam commodo sit amet purus in hendrerit. Vestibulum auctor a massa volutpat malesuada. Suspendisse volutpat fringilla lacus in pretium. Vivamus iaculis placerat purus, id gravida augue rhoncus et.
+
+Aliquam nec sapien eget nisi vulputate faucibus lobortis at dolor. Aenean vel dictum mauris, eu volutpat neque. Phasellus non sagittis diam. Nunc dolor nisi, dictum volutpat mollis nec, interdum sed mi. In cursus posuere varius. Donec fermentum pretium eros, quis luctus est. Curabitur vel erat eu sem vulputate dignissim. Quisque vitae volutpat ex, at suscipit purus. Etiam finibus placerat enim vel dignissim. Etiam vehicula feugiat ligula, et ultrices est venenatis gravida. Mauris fermentum orci vitae urna tempor convallis. Ut nisl risus, consectetur ut venenatis eget, mattis pellentesque tortor. Pellentesque suscipit dolor a libero interdum fermentum. Nam finibus neque ut erat rutrum facilisis. Praesent id pretium nibh, sit amet convallis dolor.
+
+Morbi in enim vel nulla vehicula tincidunt ut at velit. Ut id diam vel turpis faucibus volutpat. Vestibulum in elementum eros. Pellentesque pellentesque justo vehicula ex condimentum, vel mattis mi pretium. Interdum et malesuada fames ac ante ipsum primis in faucibus. Cras eget placerat eros, finibus tempor magna. Vivamus fringilla vehicula mollis. Sed eu mi dignissim, cursus lectus nec, consequat metus. Integer eleifend est diam, sed euismod est facilisis eu. Proin quam metus, euismod non faucibus eget, tempor ut dolor. In nec justo vel diam consequat efficitur vitae in lorem. Suspendisse porttitor cursus ex at porta. Vestibulum gravida tellus vitae orci bibendum, sit amet ornare metus ullamcorper.
+
+Pellentesque imperdiet libero a purus volutpat sollicitudin. Curabitur quis ullamcorper ligula. In rhoncus porttitor eleifend. Aenean fringilla risus sit amet semper blandit. Maecenas in risus et dolor cursus tristique a finibus tortor. Nunc feugiat venenatis lectus, at pharetra odio hendrerit eget. Nullam metus lectus, commodo vitae quam at, ultrices bibendum velit. Mauris molestie tortor a lacinia feugiat.
+
+Cras ornare auctor ligula non pharetra. Vestibulum pharetra condimentum sapien, id vehicula elit tempus at. Pellentesque suscipit nibh massa, eget hendrerit nibh mattis in. Mauris ac facilisis mauris. Integer neque libero, euismod nec blandit vel, consequat at urna. Vestibulum aliquam elementum odio, eget efficitur odio sagittis nec. Morbi hendrerit massa vitae varius auctor. Ut metus est, commodo eu iaculis sed, consequat at dolor. Sed semper ante sapien, in dignissim libero consequat vel. Praesent consectetur turpis quis massa consectetur placerat. Pellentesque placerat lectus sed tellus finibus, non porttitor nunc egestas. Pellentesque gravida, magna id dictum sodales, lectus ligula laoreet ante, nec tincidunt est erat vitae risus. Praesent rhoncus ligula sed nunc ultrices commodo. Aliquam at condimentum nunc, et suscipit urna.
+
+ 
+export default function MDXPage({ children }) {
+    return <MdxLayout>{children}</MdxLayout>;
+}
