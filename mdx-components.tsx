@@ -4,21 +4,35 @@ import type { MDXComponents } from 'mdx/types';
 // to be used in MDX files. You can import and use any
 // React component you want, including inline styles,
 // components from other libraries, and more.
+
+const header_styles = { // Applys to h1, h2, h3, ...
+  fontWeight: '700',
+  paddingTop: '1.8rem',
+  letterSpacing: '0.0125em',
+  marginBlock: '1rem',
+  display: 'block',
+  // fontSize: '2.5em',
+  lineHeight: 'calc(1em + (1 / 2.5 * 1ex))'
+}
+
+const h1_styles = { // Applys to h1, h2, h3, ...
+  fontSize: '2.5em'
+}
+
+const h2_styles = { // Applys to h1, h2, h3, ...
+  fontSize: '2.0em'
+}
  
 export function useMDXComponents(components: MDXComponents): MDXComponents {
   return {
     // Allows customizing built-in components, e.g. to add styling.
     h1: ({ children }) => <h1 style={
-        {
-            fontWeight: '700',
-            paddingTop: '1.8rem',
-            letterSpacing: '0.0125em',
-            marginBlock: '1rem',
-            display: 'block',
-            fontSize: '2.5em',
-            lineHeight: 'calc(1em + (1 / 2.5 * 1ex))'
-        }
+      {...header_styles, ...h1_styles}
     }>{children}</h1>,
+
+    h2: ({ children }) => <h2 style={
+      {...header_styles, ...h2_styles}
+  }>{children}</h2>,
 
     pre: ({children}) => <pre style={
         {
