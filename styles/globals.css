@@ -6,8 +6,13 @@
     .blog-tag {
         @apply text-xs font-sans font-extralight rounded-lg bg-white text-slate-400 mx-2 px-1.5 py-0.5 border-solid border border-slate-400
     }
+
     .blog-meta-span {
         @apply mx-3.5 font-serif font-normal text-base text-zinc-600
+    }
+
+    .text-shadow {
+        @apply [text-shadow:_0px_1px_4px_rgb(0_0_0_/_30%)]
     }
 }
 
