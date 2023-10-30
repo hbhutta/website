@@ -1,6 +1,5 @@
 import Image from "next/image";
 import BlogMetaType from "@/types/BlogMetaType";
-import '../styles/BlogMeta.module.css';
 
 const authorIconStyle = { width: '50px', height: '50px', borderRadius: '50%'}
 
