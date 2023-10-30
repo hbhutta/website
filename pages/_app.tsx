@@ -1,7 +1,13 @@
-import '@/styles/globals.css';
+import React from 'react';
 import type { AppProps } from 'next/app';
-import { MDXComponents } from 'mdx/types';
+import {ThemeProvider} from 'next-themes';
+
+import '@/styles/globals.css';
 
 export default function App({ Component, pageProps }: AppProps) {
-  return <Component {...pageProps} />
+  return (
+    <ThemeProvider attribute='class'>
+      <Component {...pageProps} />
+    </ThemeProvider>
+  ) 
 }

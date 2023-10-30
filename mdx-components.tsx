@@ -49,8 +49,9 @@ export function useMDXComponents(components: MDXComponents): MDXComponents {
 
     code: ({children}) => <code style={
       {
-          backgroundColor: '#ECF3F3 ', // Pale yellow: #FFE9AB, Light slate: #ECF3F3 
+          backgroundColor: '#ECF3F3', // Pale yellow: #FFE9AB, Light slate: #ECF3F3 
           fontFeatureSettings: 'normal',
+          fontSize: 'larger',
           fontFamily: 'monospace',
           borderRadius: '5px',
           paddingBlock: 'calc(0.33 * (1 / 0.8 * 1ex))',
@@ -59,14 +60,14 @@ export function useMDXComponents(components: MDXComponents): MDXComponents {
           wordWrap: 'normal',
           overflow: 'auto'  
       }
-    }>{children}</code>,
+    } className='dark:bg-red-700'>{children}</code>,
 
     p: ({ children }) => <p style={
       {
           fontWeight: '100',
           fontFamily: 'Georgia',
           fontSize: 'larger',
-          color: '#404041',
+          // color: '#404041', // Commenting this out allows for dark mode color switch
           paddingTop: '1rem',
           paddingBottom: '1rem'
       }

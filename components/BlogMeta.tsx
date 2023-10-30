@@ -10,12 +10,10 @@ export default function BlogMeta({date} : BlogMetaType) {
             <div id='author-info' className="flex justify-start">
                 <a href="https://github.com/hbhutta"><Image src={require('../public/chick.jpg')} alt='chick' style={authorIconStyle} className="border-2 border-teal-500"/></a>
                 <div className="grid grid-cols-1">
-                    <span className="blog-meta-span">Haad Bhutta</span>
-                    <span className="blog-meta-span">{date}</span>
+                    <span className="blog-meta-span dark:text-zinc-300">Haad Bhutta</span>
+                    <span className="blog-meta-span dark:text-zinc-300">{date}</span>
                 </div> 
             </div>
-            <span></span>
-            <span>{}</span>
         </div>
     )
 }
