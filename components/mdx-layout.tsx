@@ -4,10 +4,8 @@ import Layout from "./Layout";
 
 export default function MdxLayout({ children }: { children: React.ReactNode }) {
     // Create any shared layout or styles here
-    return (
-        <Layout>
-            <div className="mx-auto max-w-2xl min-h-screen">{children}</div>
-        </Layout>
+    return ( // mx-auto max-w-2xl min-h-screen
+        <Layout><div className="grid grid-cols-1 sm:max-w-xl md:max-w-2xl justify-center mx-auto px-8">{children}</div></Layout>
     )
     
     

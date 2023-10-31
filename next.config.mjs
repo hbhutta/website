@@ -9,7 +9,12 @@ const nextConfig = {
   // Optionally, add any other Next.js config below
   eslint: {
     ignoreDuringBuilds: true,
-  }
+  },
+
+  webpack: (config) => { // For rendering resume PDF using react-pdf
+    config.resolve.alias.canvas = false;
+    return config;
+  },
 }
  
 const withMDX = createMDX({

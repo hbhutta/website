@@ -16,7 +16,7 @@
 
 @layer components {
     .blog-tag {
-        @apply text-xs font-sans font-extralight rounded-lg bg-white text-slate-400 mx-2 px-1.5 py-0.5 border-solid border border-slate-400
+        @apply text-sm font-sans font-light rounded-lg bg-white text-slate-800 mx-2 px-1.5 py-0.5 border-solid border border-slate-400
     }
 
     .blog-meta-span {
@@ -28,7 +28,11 @@
     }
 
     .nav-button {
-        @apply mx-5 text-2xl pt-0.5 hover:text-teal-500
+        @apply mx-5 text-2xl pt-5 hover:text-teal-500
+    }
+
+    .about-para {
+        @apply font-sans font-light text-left pb-4 text-lg my-1 mx-4
     }
 }
 

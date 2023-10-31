@@ -6,6 +6,10 @@ export default function Projects() {
     const blogCardList = blogs.map((blogCard) => <BlogCard blog_title={blogCard.blog_title} published_date={blogCard.published_date} tags={blogCard.tags}></BlogCard>)
 
     return (
-        <Layout>{blogCardList}</Layout>
+        <Layout>
+            <div className="grid grid-cols-1 mx-4">
+                {blogCardList}
+            </div>
+        </Layout>
     )
 }

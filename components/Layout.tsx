@@ -3,7 +3,7 @@ import Header from "./Header";
 
 export default function Layout({ children } : any) {
     return (
-        <div className="mx-auto max-w-3xl flex flex-col min-h-screen">
+        <div className="grid grid-cols-1 justify-center md:max-w-3xl min-w-fit mx-auto">
             <Header/>
             <main>{children}</main>
             <Footer/>
