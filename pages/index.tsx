@@ -24,7 +24,7 @@ export default function Home() {
 
           </p>
           <p className='font-sans font-light text-left pb-4 text-lg'>
-            I am currently seeking internship and co-op opportunities in front-end and back-end software development roles.
+            <em>I am currently seeking internship and co-op opportunities in full-stack software development.</em>
           </p>
         </div>
       </Layout>

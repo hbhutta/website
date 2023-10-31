@@ -49,7 +49,7 @@ export function useMDXComponents(components: MDXComponents): MDXComponents {
 
     code: ({children}) => <code style={
       {
-          backgroundColor: '#ECF3F3', // Pale yellow: #FFE9AB, Light slate: #ECF3F3 
+          backgroundColor: '#FFE9AB', // Pale yellow: #FFE9AB, Light slate: #ECF3F3 
           fontFeatureSettings: 'normal',
           fontSize: 'larger',
           fontFamily: 'monospace',

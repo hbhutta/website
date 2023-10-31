@@ -4,9 +4,13 @@
 
 /* Default theme (needed for dark-light switching) */
 
+/* We can edit this to make changes to the HTML elements that MDX elements map to */
 @layer base {
     body {
         @apply dark:bg-gray-800 dark:text-white bg-white text-black
+    }
+    code {
+        @apply: text-gray-600 dark:bg-yellow-200
     }
 }
 
