@@ -12,8 +12,7 @@ const nextConfig = {
   },
 
   webpack: (config) => { // For rendering resume PDF using react-pdf
-    config.resolve.alias.canvas = false;
-    return config;
+    
   },
 }
  

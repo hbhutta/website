@@ -23,8 +23,8 @@
         @apply mx-3.5 font-serif font-normal text-base text-zinc-600
     }
 
-    .text-shadow {
-        @apply [text-shadow:_0px_1px_4px_rgb(0_0_0_/_30%)]
+    .project-card {
+        @apply rounded-lg shadow-lg mx-3 my-3 px-2 py-2 dark:bg-white dark:border-none border border-gray-50 dark:hover:bg-green-300 dark:text-black
     }
 
     .nav-button {
