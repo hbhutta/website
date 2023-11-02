@@ -13,11 +13,11 @@ export default function BlogCard({ blog_title, published_date, tags} : BlogCardT
     const tagList = tags.map((tag) => <span className="blog-tag">{tag}</span>)
 
     return (
-        <div id='blog-card' className="rounded-lg mx-2 my-4">
-            <Link href={blogRoute(blog_title)} className="prose"><span id='blog-title' className="text-4xl font-semibold hover:text-teal-500 dark:text-slate-400 dark:hover:text-teal-500">{blog_title}</span></Link>
+        <div id='blog-card' className="flex mx-2 my-4">
+            <Link href={blogRoute(blog_title)} className="prose"><span id='blog-title' className="text-3xl font-bold hover:text-teal-500 dark:text-slate-400 dark:hover:text-teal-500">{blog_title}</span></Link>
             <div id='blog-info' className="flex justify-between my-3">
-                <span id='published-date' className="text-base font-semibold">{published_date}</span>
-                <div id='blog-tags'>{tagList}</div>
+                <span id='published-date' className="text-sm font-medium">{published_date}</span>
+                {/* <div id='blog-tags'>{tagList}</div> */}
             </div>
             <hr/>   
         </div>

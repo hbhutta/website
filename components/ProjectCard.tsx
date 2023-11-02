@@ -6,14 +6,14 @@ export default function ProjectCard({project_title, project_desc, project_skills
     
     const skills = project_skills.map((skill) => <span className="font-sans font-normal text-sm mr-2">{skill}</span>);
     const img_path = require('/public/project_photos/' + path_to_img);
-    const github_icon = require('/public/github.svg');
+    const github_icon = require('/public/contact_icons/github.svg');
 
     return (
         <div className="project-card min-w-fit w-auto h-auto px-1 py-1">
             <div className="">
                 <Image src={img_path} width={500} height={500} alt='alt-text'></Image>
                 <Link href='https://github.com/hbhutta/website'>
-                    <Image src={github_icon}  width={25} height={25} alt="github-icon"/>
+                    <Image src={github_icon}  width={25} height={25} alt="github-icon" className="opacity-5"/>
                 </Link>
             </div>
             <div className="grid grid-cols-1 gap-1">

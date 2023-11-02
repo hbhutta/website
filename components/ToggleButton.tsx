@@ -8,8 +8,9 @@ export default function ToggleButton() {
     return (
         <button id='toggle' onClick={() => {
           setTheme(theme === 'dark' ? 'light' : 'dark');
-        }} className="nav-button">
-          &#127772;
+        }} className="nav-button ">
+          &#127772; 
+          {/* &#127774; */}
         </button>
     )
 }

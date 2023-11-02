@@ -2,19 +2,44 @@
 @tailwind components;
 @tailwind utilities;
 
-/* Default theme (needed for dark-light switching) */
+body {
+    transition: background-color 0.7s ease;    
+}
 
+.nav-button {
+    transition: color 0.4s ease;
+}
+
+#toggle {
+    transition: background-color 0.4s ease;
+}
+
+#about-image {
+    transition: box-shadow 0.5s ease;
+}
+
+ 
+
+/* Default theme (needed for dark-light switching) */
 /* We can edit this to make changes to the HTML elements that MDX elements map to */
 @layer base {
     body {
         @apply dark:bg-gray-800 dark:text-white bg-white text-black
     }
     code {
-        @apply: text-gray-600 dark:bg-yellow-200
+        @apply: 
+    }
+
+    pre {
+        @apply: bg-green-300
     }
 }
 
 @layer components {
+    .header-name {
+        @apply: flex justify-center mt-6 whitespace-nowrap hover:text-teal-500 text-4xl font-semibold hover:italic
+    }
+
     .blog-tag {
         @apply text-sm font-sans font-light rounded-lg bg-white text-slate-800 mx-2 px-1.5 py-0.5 border-solid border border-slate-400
     }
@@ -35,7 +60,6 @@
         @apply font-sans font-light text-left pb-4 text-lg my-1 mx-4
     }
 }
-
 
 
 
