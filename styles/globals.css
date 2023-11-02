@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 body {
-    transition: background-color color italic 0.7s ease;    
+    transition: background-color 1.0s ease-out;    
 }
 
 .skill {
@@ -12,6 +12,10 @@ body {
 
 .nav-button {
     transition: color 0.5s ease;
+}
+
+.nav-icon {
+    transition: opacity 0.5s ease;
 }
 
 #toggle {
@@ -57,7 +61,7 @@ body {
     }
 
     .nav-button {
-        @apply mx-5 text-2xl pt-5 hover:text-teal-500
+        @apply mx-5 text-2xl pt-6 hover:text-teal-500
     }
 
     .about-para {
@@ -66,6 +70,10 @@ body {
 
     .skill {
         @apply w-fit my-3 font-normal font-mono text-lg hover:font-semibold hover:text-teal-500
+    }
+
+    .nav-icon {
+        @apply mt-10 opacity-25 hover:opacity-70 hover:animate-pulse
     }
 }
 
