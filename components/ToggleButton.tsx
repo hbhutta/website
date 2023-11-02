@@ -8,7 +8,7 @@ export default function ToggleButton() {
     return (
         <button id='toggle' onClick={() => {
           setTheme(theme === 'dark' ? 'light' : 'dark');
-        }} className="nav-button ">
+        }} className="nav-button hover:rotate-45">
           &#127772; 
           {/* &#127774; */}
         </button>
