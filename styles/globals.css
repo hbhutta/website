@@ -3,11 +3,15 @@
 @tailwind utilities;
 
 body {
-    transition: background-color 0.7s ease;    
+    transition: background-color color italic 0.7s ease;    
+}
+
+.skill {
+    transition: color 0.7s ease;
 }
 
 .nav-button {
-    transition: color 0.4s ease;
+    transition: color 0.5s ease;
 }
 
 #toggle {
@@ -58,6 +62,10 @@ body {
 
     .about-para {
         @apply font-sans font-light text-left pb-4 text-lg my-1 mx-4
+    }
+
+    .skill {
+        @apply w-fit my-3 font-normal font-mono text-lg hover:font-semibold hover:text-teal-500
     }
 }
 

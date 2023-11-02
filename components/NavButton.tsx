@@ -7,6 +7,6 @@ type NavButtonProps = {
 
 export default function NavButton({ route, name } : NavButtonProps) {
     return (
-        <Link href={route}><button className="nav-button">{name}</button></Link>
+        <Link href={route}><button className="nav-button animated-color">{name}</button></Link>
     )
 }
