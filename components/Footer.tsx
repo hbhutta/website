@@ -18,8 +18,8 @@ export default function Footer() {
                 <Link href='https://stackoverflow.com/users/13244782/hbhutta'>
                     <Image src={require('../public/contact_icons/stackoverflow.svg')} width={iconWidth} height={iconHeight} alt="github" className="mt-10 opacity-25 hover:opacity-70 hover:animate-pulse"/>
                 </Link>
-                <Link href='https://stackoverflow.com/users/13244782/hbhutta'>
-                    <Image src={require('../public/contact_icons/stackoverflow.svg')} width={iconWidth} height={iconHeight} alt="github" className="mt-10 opacity-25 hover:opacity-70 hover:animate-pulse"/>
+                <Link href='https://leetcode.com/hbhutta/'>
+                    <Image src={require('../public/contact_icons/leetcode.svg')} width={iconWidth} height={iconHeight} alt="github" className="mt-10 opacity-25 hover:opacity-70 hover:animate-pulse"/>
                 </Link>
             </div>
         </div>
