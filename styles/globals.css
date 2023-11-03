@@ -33,14 +33,7 @@ body {
 /* We can edit this to make changes to the HTML elements that MDX elements map to */
 @layer base {
     body {
-        @apply dark:bg-gray-800 dark:text-white bg-white text-black
-    }
-    code {
-        @apply: 
-    }
-
-    pre {
-        @apply: bg-green-300
+        @apply dark:bg-gray-800 dark:bg-gradient-to-b dark:from-gray-800 dark:to-gray-900 bg-gradient-to-b from-slate-50 to-slate-100 dark:text-white text-black
     }
 }
 

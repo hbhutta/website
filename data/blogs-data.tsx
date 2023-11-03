@@ -15,6 +15,11 @@ const blogs : BlogCardType[] = [
         blog_title: "Learning Responsive Design",
         published_date: 'October 31, 2023',
         tags: ['tailwind', 'css', 'ext']
+    },
+    {
+        blog_title: "Learning Docker",
+        published_date: 'November 2, 2023',
+        tags: ['tailwind', 'css', 'ext']
     }
 ]
 

@@ -32,12 +32,13 @@ export function useMDXComponents(components: MDXComponents): MDXComponents {
 
     h2: ({ children }) => <h2 style={
       {...header_styles, ...h2_styles}
-  }>{children}</h2>,
+    }>{children}</h2>,
 
     pre: ({children}) => <pre style={
         {
+            backgroundColor: '#3c3d55', // Pale yellow: #FFE9AB, Dark slate: #3c3d55 ,
             fontFamily: 'var(--consolas)',
-            fontSize: 'smaller',
+            fontSize: 'inherit',
             fontFeatureSettings: 'normal',
             lineHeight: 'calc(1em + (1 / 0.8 * 1ex))',
             wordWrap: 'normal',
@@ -49,11 +50,12 @@ export function useMDXComponents(components: MDXComponents): MDXComponents {
 
     code: ({children}) => <code style={
       {
-          backgroundColor: '#FFE9AB', // Pale yellow: #FFE9AB, Light slate: #ECF3F3 
+         
+          backgroundColor: '#3c3d55',
           fontFeatureSettings: 'normal',
           fontSize: 'larger',
           fontFamily: 'monospace',
-          borderRadius: '5px',
+          borderRadius: '10px',
           paddingBlock: 'calc(0.33 * (1 / 0.8 * 1ex))',
           paddingInline: 'calc(0.66 * (1 / 0.8 * 1ex))',
           wordBreak: 'normal',

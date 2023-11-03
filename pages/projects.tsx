@@ -16,7 +16,7 @@ export default function Projects() {
     return (
         <Layout>
                 <div className="grid grid-cols-2 md:max-w-2xl mx-auto">
-                    {projectCards}
+                    {/* {projectCards} */}
                 </div>
         </Layout>
     )
