@@ -34,11 +34,14 @@ export default function Home() {
                 <li className='skill'>C++</li>
                 <li className='skill'>Python</li>
                 <li className='skill'>RStudio</li>
+                <li className='skill'>MongoDB</li>
+                <li className='skill'>Mongoose</li>
               </ul>
               <ul className='m-auto my-0'>
                 <li className='skill'>Git/GitHub</li>
                 <li className='skill'>Vercel</li>
                 <li className='skill'>Chrome DevTools</li>
+                <li className='skill'>Postman</li>
                 <li className='skill'>Powershell</li>
               </ul>
           </div>
